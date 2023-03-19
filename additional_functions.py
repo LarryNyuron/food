@@ -6,7 +6,7 @@ def what_page(num):
     if len(time)<=10:
         time=time[time.index('минут'):]
     elif
-    
+
     with open('recipes.csv', 'w', newline='') as csvfile:
 
     fieldnames = ['title',
@@ -38,15 +38,17 @@ def what_page(num):
                              'carbohydrates':recipe_obj(a['href'])['energy value per serving']['carbohydrates'],
                              'ingredients':recipe_obj(a['href']),
                              'tags':recipe_obj(a['href'])['tags']})
-                             
-Не использовал сразу, потому что не хотел с этой ошибкой разбираться 
+
+Не использовал сразу, потому что не хотел с этой ошибкой разбираться
 UnicodeEncodeError: 'charmap' codec can't encode character '\xbd' in position 1554: character maps to <undefined>
-                             
+
                              '''
 
-#TODO 
+#TODO
 # cast_in_minutes - для того, чтобы приводить значение времени готовки
 # к минутам
+
+
 
 if __name__ == "__main__":
     pass
